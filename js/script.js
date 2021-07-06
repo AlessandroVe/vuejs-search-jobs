@@ -14,6 +14,7 @@ new Vue(
             jobs: [
                 {
                   id: 1,
+                  itsPrefer:"",  
                   company: 'Perferendis',
                   position: 'Developer',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis?',
@@ -24,6 +25,7 @@ new Vue(
                 },
                 {
                   id: 4,
+                  itsPrefer:"",  
                   company: 'Perferendis',
                   position: 'Developer',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis?',
@@ -34,6 +36,7 @@ new Vue(
                 },
                 {
                   id: 2,
+                  itsPrefer:"",  
                   company: 'Perferendis',
                   position: 'Developer',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis?',
@@ -48,13 +51,7 @@ new Vue(
             
         },
         created(){
-            this.jobs.forEach((element)  => {
-                if(this.starred.includes(element.id)){
-                    alert("esiste un preferito")
-                }else{
-                    alert("non  esiste un preferito")
-                }
-            }); 
+            IdentifyPreferred();
         },
         mounted(){
             
@@ -63,6 +60,15 @@ new Vue(
 
         },
         methods:{
+            IdentifyPreferred(){
+                this.jobs.forEach((element)  => {
+                    if(this.starred.includes(element.id)){
+                        itsPrefer="fas fa-star"
+                    }else{
+                        itsPrefer="far fa-star"
+                    }
+                }); 
+            }
            
         }
     
