@@ -35,7 +35,7 @@ new Vue(
                   contract: 'Full Time'
                 },
                 {
-                  id: 2,
+                  id: 5,
                   itsPrefer:"",  
                   company: 'Perferendis',
                   position: 'Developer',
@@ -51,13 +51,15 @@ new Vue(
             
         },
         created(){
-            IdentifyPreferred();
+            this.IdentifyPreferred();
+            console.log(this.starred)
+
         },
         mounted(){
             
         },
         computed: {
-
+            
         },
         methods:{
             IdentifyPreferred:function () {
@@ -68,7 +70,20 @@ new Vue(
                         element.itsPrefer="far fa-star"
                     }
                 }); 
+            },
+            addPostToFavorites:function (post) {
+                if(this.starred.includes(post.id)){
+                    this.starred.splice(post.id,1)
+                    console.log(this.starred)
+
+                }else{
+                    this.starred.push(post.id)
+                    console.log(this.starred)
+                }
+                this.IdentifyPreferred();
+
             }
+            
         }
     
     }

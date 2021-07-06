@@ -48,7 +48,7 @@
                     <div class="jobs-zone">
                         {{post.city}}
                     </div>
-                    <i :class="post.itsPrefer"></i>
+                    <i @click="addPostToFavorites(post)" :class="post.itsPrefer"></i>
                 </div> 
                 <div class="post-text">
                    {{post.description}} <br> <br>
