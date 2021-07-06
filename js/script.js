@@ -48,14 +48,7 @@ new Vue(
             
         },
         created(){
-            this.jobs.forEach(element , index  => {
-                if(this.starred.includes(this.jobs[index].id)){
-                    alert("esiste un preferito")
-                }else{
-                    alert("non  esiste un preferito")
-                }
-            });          
-            
+            IdentifyPreferred();
         },
         mounted(){
             
@@ -64,6 +57,15 @@ new Vue(
 
         },
         methods:{
+            IdentifyPreferred:function(){
+                this.jobs.forEach(element , index  => {
+                    if(this.starred.includes(this.jobs[index].id)){
+                        alert("esiste un preferito")
+                    }else{
+                        alert("non  esiste un preferito")
+                    }
+                });          
+            }
 
            
         }
