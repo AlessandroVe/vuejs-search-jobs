@@ -60,7 +60,7 @@ new Vue(
 
         },
         methods:{
-            IdentifyPreferred(){
+            IdentifyPreferred:function () {
                 this.jobs.forEach((element)  => {
                     if(this.starred.includes(element.id)){
                         element.itsPrefer="fas fa-star"
@@ -69,7 +69,6 @@ new Vue(
                     }
                 }); 
             }
-           
         }
     
     }
