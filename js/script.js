@@ -24,7 +24,7 @@ new Vue(
                   contract: 'Full Time'
                 },
                 {
-                  id: 4,
+                  id: 2,
                   itsPrefer:"",  
                   company: 'Perferendis',
                   position: 'Developer',
@@ -75,7 +75,6 @@ new Vue(
                 if(this.starred.includes(post.id)){
                     this.starred.splice(post.id,1)
                     console.log(this.starred)
-
                 }else{
                     this.starred.push(post.id)
                     console.log(this.starred)
