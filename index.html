@@ -36,10 +36,17 @@
                        <img :src="post.logo" alt="">
                     </div>
                     <div class="details">
-                        <div class="user-name"></div>
+                        <div class="post-specs">
+                            {{post.company}} 
+                            <br>
+                            {{post.position}}
+                        </div>
                         <div class="post-date">
                             {{post.created_at}}
                         </div>
+                    </div>
+                    <div class="jobs-zone">
+                        {{post.city}}
                     </div>
                 </div> 
                 <div class="post-text">
