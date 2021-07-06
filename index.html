@@ -24,34 +24,32 @@
         </div>
 
         <div class="new-post">
-            <textarea @keyup.enter="newPost()" v-model="myProfile.details.newTextPost" placeholder="A cosa stai pensando?"></textarea>
+            <textarea @keyup.enter="newPost()" v-model="myProfile.details.newTextPost" ></textarea>
             <button class="send" @click="newPost()" >CREA</button>
         </div>
 
         <div class="jobs-list">
 
-            <div v-for = '' class="post">
+            <div v-for='post in jobs' class="post">
                 <div class="post-details">
-                    <div class="user-pic">
-                       
+                    <div class="post-pic">
+                       <img :src="jobs.post.logo" alt="">
                     </div>
                     <div class="details">
                         <div class="user-name"></div>
-                        <div class="post-date"></div>
+                        <div class="post-date">
+                            {{jobs.post.crea}}
+                        </div>
                     </div>
                 </div> 
                 <div class="post-text">
                    
                 </div>
-
-                <!-- if? -->
-
-
             </div>
 
         </div>
 
     </div>
-    <script src="./js/script-vue.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ new Vue(
                   position: 'Developer',
                   description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis?',
                   created_at: '5/22/2021',
-                  logo: 'logo.jpg',
+                  logo: 'https://www.focus.it/site_stored/imgs/0003/042/nerd2.1020x680.jpg',
                   city: 'Roma',
                   contract: 'Full Time'
                 },
@@ -28,8 +28,8 @@ new Vue(
                     position: 'Developer',
                     description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis?',
                     created_at: '5/22/2021',
-                    logo: 'logo.jpg',
-                    city: 'Roma',
+                    logo: 'https://www.focus.it/site_stored/imgs/0003/042/nerd2.1020x680.jpg',
+                    city: 'Napoli',
                     contract: 'Full Time'
                   },
                   {
@@ -38,8 +38,8 @@ new Vue(
                     position: 'Developer',
                     description: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veniam similique adipisci! Perferendis odio sapiente libero quam deleniti quidem consequuntur adipisci minima non iusto, sunt optio hic. Corporis, laboriosam perferendis?',
                     created_at: '5/22/2021',
-                    logo: 'logo.jpg',
-                    city: 'Roma',
+                    logo: 'https://www.focus.it/site_stored/imgs/0003/042/nerd2.1020x680.jpg',
+                    city: 'Palermo',
                     contract: 'Full Time'
                   }    
             ],
