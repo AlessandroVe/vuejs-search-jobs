@@ -33,12 +33,12 @@
             <div v-for='post in jobs' class="post">
                 <div class="post-details">
                     <div class="post-pic">
-                       <img :src="jobs.post.logo" alt="">
+                       <img :src="post.logo" alt="">
                     </div>
                     <div class="details">
                         <div class="user-name"></div>
                         <div class="post-date">
-                            {{jobs.post.created_at}}
+                            {{post.created_at}}
                         </div>
                     </div>
                 </div> 
