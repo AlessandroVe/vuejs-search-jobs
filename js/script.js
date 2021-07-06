@@ -63,9 +63,9 @@ new Vue(
             IdentifyPreferred(){
                 this.jobs.forEach((element)  => {
                     if(this.starred.includes(element.id)){
-                        itsPrefer="fas fa-star"
+                        element.itsPrefer="fas fa-star"
                     }else{
-                        itsPrefer="far fa-star"
+                        element.itsPrefer="far fa-star"
                     }
                 }); 
             }
