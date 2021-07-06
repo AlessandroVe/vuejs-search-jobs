@@ -62,6 +62,9 @@ new Vue(
             
         },
         methods:{
+            removeEl : function(el,array) {    
+                this.array.splice(array.indexOf(el), 1);
+            },
             IdentifyPreferred:function () {
                 this.jobs.forEach((element)  => {
                     if(this.starred.includes(element.id)){
@@ -73,7 +76,7 @@ new Vue(
             },
             addPostToFavorites:function (post) {
                 if(this.starred.includes(post.id)){
-                    this.starred.splice(post.id,1)
+                    this.removeEl(post.id,this.starred)
                     console.log(this.starred)
                 }else{
                     this.starred.push(post.id)
