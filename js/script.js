@@ -4,6 +4,13 @@ new Vue(
     {
         el: '#jobs-page',
         data: {
+            myProfile: {
+                details: {
+                    name: 'Pierfilippo',
+                    surname: 'Baudo',
+                    pic: 'https://www.focus.it/site_stored/imgs/0003/042/nerd2.1020x680.jpg',
+                },
+            },    
             jobs: [
                 {
                   id: 1,

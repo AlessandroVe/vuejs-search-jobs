@@ -30,24 +30,22 @@
 
         <div class="jobs-list">
 
-            <div v-for = 'post in myProfile.posts' class="post">
+            <div v-for = '' class="post">
                 <div class="post-details">
                     <div class="user-pic">
-                        <img :src="myProfile.details.pic" alt="user pic">
+                       
                     </div>
                     <div class="details">
-                        <div class="user-name">{{myProfile.details.name}} {{myProfile.details.surname}}</div>
-                        <div class="post-date">{{post.date}}</div>
+                        <div class="user-name"></div>
+                        <div class="post-date"></div>
                     </div>
                 </div> 
                 <div class="post-text">
-                    {{post.text}}
+                   
                 </div>
 
                 <!-- if? -->
-                <div v-if = "Object.keys(post).includes('mediaPath')" class="post-media">
-                    <img :src='post.mediaPath' alt="media" />
-                </div>
+
 
             </div>
 
